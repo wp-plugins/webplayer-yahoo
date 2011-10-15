@@ -1,5 +1,6 @@
 === WebPlayer Yahoo! ===
 Contributors: Fabrizio Pivari
+Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
@@ -24,3 +25,11 @@ For more information visit:
 == Screenshots ==
 
 1. WebPlayer Yahoo! settings page.
+
+
+== Changelog ==
+
+= 0.4 =
+* First public release
+
+
