@@ -15,6 +15,14 @@
     <option value="silver" <?php if (get_option('theme') == 'silver') echo "selected=selected" ?>>silver</option>
   </select>
 </td>
+</tr><tr valign="top">
+<th scape="row"><b>termDetection:</b></th>
+<td>
+  <select name="termDetection">
+    <option value="off" <?php if (get_option('termDetection') == 'off') echo "selected=selected" ?>>off</option>
+    <option value="on"  <?php if (get_option('termDetection') == 'on') echo "selected=selected" ?>>on</option>
+  </select>
+</td>
 </tr>
 
 </table>

@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 0.4.0
+Stable tag: 0.6.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -29,7 +29,20 @@ For more information visit:
 
 == Changelog ==
 
+= 0.6 =
+* You can set termDetection on of off
+
 = 0.4 =
 * First public release
+
+== Upgrade Notice ==
+
+= 0.6 =
+* Optimize the code and the new set termDetection
+
+= 0.4 =
+* First public release
+
+
 
 

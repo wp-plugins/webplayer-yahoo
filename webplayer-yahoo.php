@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 0.4.0
+Version: 0.6.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -35,15 +35,18 @@ if (!defined('WP_PLUGIN_DIR'))
       define('WP_PLUGIN_DIR', WP_CONTENT_DIR.'/plugins');
 
 function activate_webplayer() {
-  add_option('theme', 'black');
+	add_option('theme', 'black');
+	add_option('termDetection', 'off');
 }
 
 function deactive_webplayer() {
   delete_option('theme');
+  delete_option('termDetection');
 }
 
 function admin_init_webplayer() {
   register_setting('webplayer', 'theme');
+  register_setting('webplayer', 'termDetection');
 }
 
 function admin_menu_webplayer() {
@@ -55,11 +58,15 @@ function options_page_webplayer() {
 }
 
 function webplayer() {
-  if (get_option('theme') == 'silver') {
-     echo '<script type="text/javascript"> var YWPParams = { theme: "silver" }; </script> <script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"> </script>';
-     }  else {
-     echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>';
-     } 
+  $options='<script type="text/javascript"> var YWPParams = { ';
+  $theme = get_option('theme');
+  $options = $options . 'theme: "' . $theme . '",';
+  $termDetection = get_option('termDetection');
+  $options = $options . 'termDetection: "' . $termDetection. '"';
+  $options = $options . '}; </script>';
+  echo $options;
+  echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>';
+
 }
 
 register_activation_hook(__FILE__, 'activate_webplayer');
