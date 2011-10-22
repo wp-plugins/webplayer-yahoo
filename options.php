@@ -23,6 +23,14 @@
     <option value="on"  <?php if (get_option('termDetection') == 'on') echo "selected=selected" ?>>on</option>
   </select>
 </td>
+</tr><tr valign="top">
+<th scape="row"><b>autoplay:</b></th>
+<td>
+  <select name="autoplay">
+    <option value="false" <?php if (get_option('autoplay') == 'false') echo "selected=selected" ?>>false</option>
+    <option value="true"  <?php if (get_option('autoplay') == 'true') echo "selected=selected" ?>>true</option>
+  </select>
+</td>
 </tr>
 
 </table>
