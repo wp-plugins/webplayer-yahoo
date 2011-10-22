@@ -66,7 +66,6 @@ function webplayer() {
   $autoplay = get_option('autoplay');
   $defaultalbumart='http://www.pivari.com/fabrizio-pivari-205x205.jpg';
   $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay. ', defaultalbumart:"' . $defaultalbumart . '" }; </script>';
-//  $options='<script type="text/javascript"> var YWPParams = { volume:"1.0" }; </script>';
   echo $options;
   echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>';
 
