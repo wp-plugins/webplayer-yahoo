@@ -31,6 +31,14 @@
     <option value="true"  <?php if (get_option('autoplay') == 'true') echo "selected=selected" ?>>true</option>
   </select>
 </td>
+</tr><tr valign="top">
+<th scape="row"><b>autoadvance:</b></th>
+<td>
+  <select name="autoadvance">
+    <option value="true" <?php if (get_option('autoadvance') == 'true') echo "selected=selected" ?>>true</option>
+    <option value="false"  <?php if (get_option('autoadvance') == 'false') echo "selected=selected" ?>>false</option>
+  </select>
+</td>
 </tr>
 
 </table>

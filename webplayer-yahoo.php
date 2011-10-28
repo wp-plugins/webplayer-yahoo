@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 0.7.0
+Version: 0.8.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -38,18 +38,21 @@ function activate_webplayer() {
 	add_option('theme', 'black');
 	add_option('termDetection', 'off');
 	add_option('autoplay', 'false');
+	add_option('autoadvance', 'true');
 }
 
 function deactive_webplayer() {
   delete_option('theme');
   delete_option('termDetection');
   delete_option('autoplay');
+  delete_option('autoadvance');
 }
 
 function admin_init_webplayer() {
   register_setting('webplayer', 'theme');
   register_setting('webplayer', 'termDetection');
   register_setting('webplayer', 'autoplay');
+  register_setting('webplayer', 'autoadvance');
 }
 
 function admin_menu_webplayer() {
@@ -64,8 +67,9 @@ function webplayer() {
   $theme = get_option('theme');
   $termDetection = get_option('termDetection');
   $autoplay = get_option('autoplay');
+  $autoadvance = get_option('autoadvance');
   $defaultalbumart='http://www.pivari.com/fabrizio-pivari-205x205.jpg';
-  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay. ', defaultalbumart:"' . $defaultalbumart . '" }; </script>';
+  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>';
   echo $options;
   echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>';
 
