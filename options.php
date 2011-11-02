@@ -1,5 +1,5 @@
 <div class="wrap">
-<h2>WebPlayer Yahoo!</h2>
+<h2>WebPlayer Yahoo! v. <?php global $version; echo $version; ?></h2>
 
 <form method="post" action="options.php">
 <?php wp_nonce_field('update-options'); ?>

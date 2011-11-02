@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 0.8.0
+Stable tag: 0.9.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -39,6 +39,9 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/messages
 
 == Changelog ==
 
+= 0.9 =
+* Minor changes in code and documentation
+
 = 0.8 =
 * You can set autoadvance true or false.
 The autoadvance parameter controls whether or not the player automatically plays the next item in the playlist after the previous item is done playing. Setting autoadvance to "false" will tell the Yahoo! WebPlayer to NOT advance to the next track automatically once the current track finishes playing. The default value is true. 
@@ -55,6 +58,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 0.9 =
+* Minor changes in code and documentation
 
 = 0.8 =
 * Optimize the code and the new set autoadvance

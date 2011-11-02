@@ -2,9 +2,9 @@
 
 /*
 Plugin Name: WebPlayer Yahoo!
-Plugin URI: http://www.pivari.com/
+Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 0.8.0
+Version: 0.9.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -24,6 +24,8 @@ Author URI: http://www.pivari.com
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
+
+$version="0.9.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -64,14 +66,17 @@ function options_page_webplayer() {
 }
 
 function webplayer() {
+  global $version;
   $theme = get_option('theme');
   $termDetection = get_option('termDetection');
   $autoplay = get_option('autoplay');
   $autoadvance = get_option('autoadvance');
   $defaultalbumart='http://www.pivari.com/fabrizio-pivari-205x205.jpg';
-  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>';
+  echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$version.' (Begin) -->'."\n" ;
+  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
   echo $options;
-  echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>';
+  echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>'."\n" ;
+  echo '<!-- WebPlayer Yahoo! plugin v. '.$version.' (End) -->'."\n" ;
 
 }
 
