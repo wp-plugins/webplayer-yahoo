@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 0.9.0
+Version: 1.0.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$version="0.9.0";
+$version="1.0.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -41,6 +41,7 @@ function activate_webplayer() {
 	add_option('termDetection', 'off');
 	add_option('autoplay', 'false');
 	add_option('autoadvance', 'true');
+	add_option('defaultalbumart', 'http://www.pivari.com/fabrizio-pivari-205x205.jpg');
 }
 
 function deactive_webplayer() {
@@ -48,6 +49,7 @@ function deactive_webplayer() {
   delete_option('termDetection');
   delete_option('autoplay');
   delete_option('autoadvance');
+  delete_option('defaultalbumart');
 }
 
 function admin_init_webplayer() {
@@ -55,6 +57,7 @@ function admin_init_webplayer() {
   register_setting('webplayer', 'termDetection');
   register_setting('webplayer', 'autoplay');
   register_setting('webplayer', 'autoadvance');
+  register_setting('webplayer', 'defaultalbumart');
 }
 
 function admin_menu_webplayer() {
@@ -71,7 +74,9 @@ function webplayer() {
   $termDetection = get_option('termDetection');
   $autoplay = get_option('autoplay');
   $autoadvance = get_option('autoadvance');
-  $defaultalbumart='http://www.pivari.com/fabrizio-pivari-205x205.jpg';
+  $defaultalbumart = get_option('defaultalbumart');
+  if ( $defaultalbumart == '' )
+      $defaultalbumart = 'http://www.pivari.com/fabrizio-pivari-205x205.jpg';
   echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$version.' (Begin) -->'."\n" ;
   $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
   echo $options;

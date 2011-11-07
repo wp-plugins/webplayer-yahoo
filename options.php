@@ -8,7 +8,7 @@
 <table class="form-table">
 
 <tr valign="top">
-<th scape="row"><b>Theme:</b></th>
+<th scope="row"><b>Theme:</b></th>
 <td>
   <select name="theme">
     <option value="black"  <?php if (get_option('theme') == 'black') echo "selected=selected" ?>>black</option>
@@ -16,7 +16,7 @@
   </select>
 </td>
 </tr><tr valign="top">
-<th scape="row"><b>termDetection:</b></th>
+<th scope="row"><b>termDetection:</b></th>
 <td>
   <select name="termDetection">
     <option value="off" <?php if (get_option('termDetection') == 'off') echo "selected=selected" ?>>off</option>
@@ -24,7 +24,7 @@
   </select>
 </td>
 </tr><tr valign="top">
-<th scape="row"><b>autoplay:</b></th>
+<th scope="row"><b>autoplay:</b></th>
 <td>
   <select name="autoplay">
     <option value="false" <?php if (get_option('autoplay') == 'false') echo "selected=selected" ?>>false</option>
@@ -32,13 +32,19 @@
   </select>
 </td>
 </tr><tr valign="top">
-<th scape="row"><b>autoadvance:</b></th>
+<th scope="row"><b>autoadvance:</b></th>
 <td>
   <select name="autoadvance">
     <option value="true" <?php if (get_option('autoadvance') == 'true') echo "selected=selected" ?>>true</option>
     <option value="false"  <?php if (get_option('autoadvance') == 'false') echo "selected=selected" ?>>false</option>
   </select>
 </td>
+</tr>
+
+<tr valign="top">
+<th scope="row"><b>defaultalbumart:</b></th>
+<td><input type="text" name="defaultalbumart" size="50" value="<?php echo get_option('defaultalbumart'); ?>" /><br>
+If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/">a donation</a> is a good idea.</td>
 </tr>
 
 </table>

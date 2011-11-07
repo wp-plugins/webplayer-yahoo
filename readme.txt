@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 0.9.1
+Stable tag: 1.0.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -39,6 +39,13 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/messages
 
 == Changelog ==
 
+= 1.0 =
+You can set defaultalbumart
+The defaultalbumart parameter allows you to set your own image inside the Yahoo! WebPlayer that appears while audio is playing. This image appears to the right of the volume control, next to the item's title for all items in your playlist. A placeholder image will appear by default and no image will appear while video is playing.
+We recommend 205px x 205px for best appearance. 
+The default image in WebPlayer Yahoo! wordpress plugin is http://www.pivari.com/fabrizio-pivari-205x205.jpg
+If you prefer to use your face a donation is a good idea. [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
+
 = 0.9 =
 * Minor changes in code and documentation
 
@@ -58,6 +65,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.0 =
+Optimize the code and the new set defaultalbumart
 
 = 0.9 =
 * Minor changes in code and documentation
