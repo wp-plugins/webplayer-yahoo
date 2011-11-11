@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -30,7 +30,7 @@ With songs you will see my face. If you prefer to use your face a donation is a 
 
 WebPlayer Yahoo! is beta.
 To find a solution to every your possible problem use the official forum
-http://tech.groups.yahoo.com/group/yhoomediaplayer/messages
+http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
 == Screenshots ==
 
@@ -38,6 +38,9 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/messages
 2. WebPlayer Yahoo! with Fabrizio Pivari face. If you prefer to use your face a donation is a good idea. [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
 
 == Changelog ==
+
+= 1.1 =
+You can use Settings in Plugins / Installed Plugin / WebPlayer Yahoo!
 
 = 1.0 =
 You can set defaultalbumart
@@ -66,6 +69,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 
 == Upgrade Notice ==
 
+= 1.1 =
+Settings in Plugins / Installed Plugin / WebPlayer Yahoo!
+
 = 1.0 =
 Optimize the code and the new set defaultalbumart
 
@@ -83,7 +89,5 @@ Optimize the code and the new set defaultalbumart
 
 = 0.4 =
 * First public release
-
-
 
 
