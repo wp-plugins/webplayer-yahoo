@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 1.1.0
+Version: 1.2.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$version="1.1.0";
+$version="1.2.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -91,12 +91,20 @@ function webplayer_settings( $links ) {
 	return $links;
 }
 
+function webplayer_plugin_settings($links, $file) {
+	if ( $file == basename( dirname( __FILE__ ) ).'/'.basename( __FILE__ ) ) {
+		$links[] = '<a href="options-general.php?page=webplayer">' . __('Settings') . '</a>';
+		$links[] = '<a href="http://www.pivari.com/contatta-pivari/">' . __('Support') . '</a>';
+	}
+	return $links;
+}
 
 register_activation_hook(__FILE__, 'activate_webplayer');
 register_deactivation_hook(__FILE__, 'deactive_webplayer');
 add_action('admin_init', 'admin_init_webplayer');
 add_action('admin_menu', 'admin_menu_webplayer');
 add_action( 'plugin_action_links_'.basename( dirname( __FILE__ ) ).'/'.basename( __FILE__ ), 'webplayer_settings', 10, 4 );
+add_filter( 'plugin_row_meta', 'webplayer_plugin_settings', 10, 2 );
 add_action('wp_footer', 'webplayer');
 
 

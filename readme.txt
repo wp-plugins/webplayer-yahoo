@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -36,11 +36,17 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
 1. WebPlayer Yahoo! settings page.
 2. WebPlayer Yahoo! with Fabrizio Pivari face. If you prefer to use your face a donation is a good idea. [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
+3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
 
+= 1.2 =
+Settings and Support in Plugins / Installed Plugin / WebPlayer Yahoo!
+in the Description column
+
 = 1.1 =
 You can use Settings in Plugins / Installed Plugin / WebPlayer Yahoo!
+in the Plugin column
 
 = 1.0 =
 You can set defaultalbumart
@@ -68,6 +74,10 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.2 =
+Settings and Support in Plugins / Installed Plugin / WebPlayer Yahoo!
+in the Description column
 
 = 1.1 =
 Settings in Plugins / Installed Plugin / WebPlayer Yahoo!
