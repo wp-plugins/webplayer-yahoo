@@ -1,12 +1,16 @@
 <div class="wrap">
 <h2>WebPlayer Yahoo! v. <?php global $version; echo $version; ?></h2>
-
 <form method="post" action="options.php">
+<div id="poststuff">
+<div id="post-body">
+<div class="postbox"> 
+<h3 class='hndle'><span>WebPlayer Yahoo! settings</span></h3>
+<div class="inside"> 
+
 <?php wp_nonce_field('update-options'); ?>
 <?php settings_fields('webplayer'); ?>
 
-<table class="form-table">
-
+<table class="form-table" style="margin-top: 0; clear:none;">
 <tr valign="top">
 <th scope="row"><b>Theme:</b></th>
 <td>
@@ -48,6 +52,8 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 </tr>
 
 </table>
+</div>
+</div>
 
 <input type="hidden" name="action" value="update" />
 
@@ -55,5 +61,7 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
 </p>
 
+</div>
+</div>
 </form>
 </div>

@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -40,6 +40,9 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
 == Changelog ==
 
+= 1.3 =
+Postbox for a nicer configuration page
+
 = 1.2 =
 Settings and Support in Plugins / Installed Plugin / WebPlayer Yahoo!
 in the Description column
@@ -74,6 +77,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.3 =
+Postbox for a nicer configuration page
 
 = 1.2 =
 Settings and Support in Plugins / Installed Plugin / WebPlayer Yahoo!
