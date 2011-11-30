@@ -43,6 +43,14 @@
     <option value="false"  <?php if (get_option('autoadvance') == 'false') echo "selected=selected" ?>>false</option>
   </select>
 </td>
+</tr><tr valign="top">
+<th scope="row"><b>linkConfig:</b></th>
+<td>
+  <select name="linkConfig">
+    <option value="off" <?php if (get_option('linkConfig') == 'off') echo "selected=selected" ?>>off</option>
+    <option value="youtube"  <?php if (get_option('linkConfig') == 'youtube') echo "selected=selected" ?>>youtube</option>
+  </select>
+</td>
 </tr>
 
 <tr valign="top">

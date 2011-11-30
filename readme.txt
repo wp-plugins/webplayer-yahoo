@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.2
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -39,6 +39,11 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
+
+= 1.4 =
+You can set linkConfig
+linkconfig is brand new. We have not even had a chance to add it to the documentation.
+Right now, it's only used to prevent play buttons from appearing next to youtube video page links
 
 = 1.3 =
 Postbox for a nicer configuration page
@@ -77,6 +82,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.4 =
+You can set linkConfig
 
 = 1.3 =
 Postbox for a nicer configuration page
