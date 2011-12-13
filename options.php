@@ -3,7 +3,7 @@
 <form method="post" action="options.php">
 <div id="poststuff">
 <div id="post-body">
-<div class="postbox"> 
+<div class="postbox" id="1"> 
 <h3 class='hndle'><span>WebPlayer Yahoo! settings</span></h3>
 <div class="inside"> 
 
@@ -60,6 +60,33 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 </tr>
 
 </table>
+</div>
+</div>
+
+<div class="postbox" id="2"> 
+<h3 class='hndle'><span>WebPlayer Yahoo! settings that don't seem to work</span></h3>
+<div class="inside">
+<table class="form-table" style="margin-top: 0; clear:none;">
+<tr valign="top">
+<th scope="row"><b>volume:</b></th>
+<td>
+  <select name="volume">
+    <option value="0.5" <?php if (get_option('volume') == '0.5') echo "selected=selected" ?>>0.5</option>
+    <option value="0.0" <?php if (get_option('volume') == '0.0') echo "selected=selected" ?>>0.0</option>
+    <option value="0.1" <?php if (get_option('volume') == '0.1') echo "selected=selected" ?>>0.1</option>
+    <option value="0.2" <?php if (get_option('volume') == '0.2') echo "selected=selected" ?>>0.2</option>
+    <option value="0.3" <?php if (get_option('volume') == '0.3') echo "selected=selected" ?>>0.3</option>
+    <option value="0.4" <?php if (get_option('volume') == '0.4') echo "selected=selected" ?>>0.4</option>
+    <option value="0.6" <?php if (get_option('volume') == '0.6') echo "selected=selected" ?>>0.6</option>
+    <option value="0.7" <?php if (get_option('volume') == '0.7') echo "selected=selected" ?>>0.7</option>
+    <option value="0.8" <?php if (get_option('volume') == '0.8') echo "selected=selected" ?>>0.8</option>
+    <option value="0.9" <?php if (get_option('volume') == '0.9') echo "selected=selected" ?>>0.9</option>
+    <option value="1.0" <?php if (get_option('volume') == '1.0') echo "selected=selected" ?>>1.0</option>
+</select>
+</td>
+</tr>
+</table>
+
 </div>
 </div>
 

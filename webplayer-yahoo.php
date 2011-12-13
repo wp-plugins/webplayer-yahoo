@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 1.4.0
+Version: 1.5.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$version="1.4.0";
+$version="1.5.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -43,6 +43,7 @@ function activate_webplayer() {
 	add_option('autoadvance', 'true');
 	add_option('defaultalbumart', 'http://www.pivari.com/fabrizio-pivari-205x205.jpg');
 	add_option('linkConfig', 'off');
+	add_option('volume', '0.5');
 }
 
 function deactive_webplayer() {
@@ -52,6 +53,7 @@ function deactive_webplayer() {
   delete_option('autoadvance');
   delete_option('defaultalbumart');
   delete_option('linkConfig');
+  delete_option('volume');
 }
 
 function admin_init_webplayer() {
@@ -61,6 +63,7 @@ function admin_init_webplayer() {
   register_setting('webplayer', 'autoadvance');
   register_setting('webplayer', 'defaultalbumart');
   register_setting('webplayer', 'linkConfig');
+  register_setting('webplayer', 'volume');
 }
 
 function admin_menu_webplayer() {
@@ -79,13 +82,14 @@ function webplayer() {
   $autoadvance = get_option('autoadvance');
   $defaultalbumart = get_option('defaultalbumart');
   $linkConfig = get_option('linkConfig');
+  $volume = get_option('volume');
   if ( $defaultalbumart == '' )
 	  $defaultalbumart = 'http://www.pivari.com/fabrizio-pivari-205x205.jpg';
   if ( $linkConfig == 'youtube' )
       $linkConfig = ', linkConfig:{youtube: \'ignore\'}';
   else $linkConfig = '';
   echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$version.' (Begin) -->'."\n" ;
-  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection. '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance .  $linkConfig . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
+  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection . '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', volume:' . $volume . $linkConfig . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
   echo $options;
   echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player-beta.js"></script>'."\n" ;
   echo '<!-- WebPlayer Yahoo! plugin v. '.$version.' (End) -->'."\n" ;
