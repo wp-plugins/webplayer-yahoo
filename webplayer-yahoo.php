@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 1.5.2
+Version: 1.5.3
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$version="1.5.2";
+$version="1.5.3";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -83,6 +83,8 @@ function webplayer() {
   $defaultalbumart = get_option('defaultalbumart');
   $linkConfig = get_option('linkConfig');
   $volume = get_option('volume');
+  if ( $volume == '10' ) $volume='1.0';
+  else $volume = '0.'.$volume;
   if ( $defaultalbumart == '' )
 	  $defaultalbumart = 'http://www.pivari.com/fabrizio-pivari-205x205.jpg';
   if ( $linkConfig == 'youtube' )
