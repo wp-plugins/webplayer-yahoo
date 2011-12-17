@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 
 Enables WebPlayer Yahoo! on all pages.
 
@@ -28,8 +28,8 @@ With songs you will see my face. If you prefer to use your face a donation is a 
 
 = Yahoo! Media player does not play in few browsers =
 
-WebPlayer Yahoo! is beta.
-To find a solution to every your possible problem use the official forum
+To find a solution to every your possible problem about WebPlayer Yahoo! 
+use the official forum
 http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
 == Screenshots ==
@@ -40,6 +40,8 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
 == Changelog ==
 
+= 1.5.2 =
+Corrected a bug in volume setting
 
 = 1.5.1 =
 Changed the js from http://webplayer.yahooapis.com/player-beta.js to
@@ -92,6 +94,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.5.2 =
+Corrected a bug in volume setting
 
 = 1.5.1 =
 Changed the js from http://webplayer.yahooapis.com/player-beta.js to

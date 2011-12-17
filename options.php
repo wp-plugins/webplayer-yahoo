@@ -71,17 +71,17 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 <th scope="row"><b>volume:</b></th>
 <td>
   <select name="volume">
-    <option value="0.5" <?php if (get_option('volume') == '0.5') echo "selected=selected" ?>>0.5</option>
-    <option value="0.0" <?php if (get_option('volume') == '0.0') echo "selected=selected" ?>>0.0</option>
-    <option value="0.1" <?php if (get_option('volume') == '0.1') echo "selected=selected" ?>>0.1</option>
-    <option value="0.2" <?php if (get_option('volume') == '0.2') echo "selected=selected" ?>>0.2</option>
-    <option value="0.3" <?php if (get_option('volume') == '0.3') echo "selected=selected" ?>>0.3</option>
-    <option value="0.4" <?php if (get_option('volume') == '0.4') echo "selected=selected" ?>>0.4</option>
-    <option value="0.6" <?php if (get_option('volume') == '0.6') echo "selected=selected" ?>>0.6</option>
-    <option value="0.7" <?php if (get_option('volume') == '0.7') echo "selected=selected" ?>>0.7</option>
-    <option value="0.8" <?php if (get_option('volume') == '0.8') echo "selected=selected" ?>>0.8</option>
-    <option value="0.9" <?php if (get_option('volume') == '0.9') echo "selected=selected" ?>>0.9</option>
-    <option value="1.0" <?php if (get_option('volume') == '1.0') echo "selected=selected" ?>>1.0</option>
+    <option value="5" <?php if (get_option('volume') == '5') echo "selected=selected" ?>>0.5</option>
+    <option value="0" <?php if (get_option('volume') == '0') echo "selected=selected" ?>>0.0</option>
+    <option value="1" <?php if (get_option('volume') == '1') echo "selected=selected" ?>>0.1</option>
+    <option value="2" <?php if (get_option('volume') == '2') echo "selected=selected" ?>>0.2</option>
+    <option value="3" <?php if (get_option('volume') == '3') echo "selected=selected" ?>>0.3</option>
+    <option value="4" <?php if (get_option('volume') == '4') echo "selected=selected" ?>>0.4</option>
+    <option value="6" <?php if (get_option('volume') == '6') echo "selected=selected" ?>>0.6</option>
+    <option value="7" <?php if (get_option('volume') == '7') echo "selected=selected" ?>>0.7</option>
+    <option value="8" <?php if (get_option('volume') == '8') echo "selected=selected" ?>>0.8</option>
+    <option value="9" <?php if (get_option('volume') == '9') echo "selected=selected" ?>>0.9</option>
+    <option value="10" <?php if (get_option('volume') == '10') echo "selected=selected" ?>>1.0</option>
 </select>
 </td>
 </tr>
