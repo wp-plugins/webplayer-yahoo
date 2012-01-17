@@ -85,6 +85,16 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 </select>
 </td>
 </tr>
+<tr valign="top">
+<th scope="row"><b>playlink:</b></th>
+<td>
+  <select name="playlink">
+    <option value="media-only" <?php if (get_option('playlink') == 'media-only') echo "selected=selected" ?>>media-only</option>
+    <option value="true" <?php if (get_option('playlink') == 'true') echo "selected=selected" ?>>true</option>
+    <option value="false" <?php if (get_option('playlink') == 'false') echo "selected=selected" ?>>false</option>
+</select>
+</td>
+</tr>
 </table>
 
 </div>

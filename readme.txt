@@ -4,16 +4,18 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 1.5.3
+Stable tag: 1.6.0
 
-Enables WebPlayer Yahoo! on all pages.
+Enables Yahoo! WebPlayer on all pages.
 
 == Description ==
 
-This plugin adds the required javascript for WebPlayer Yahoo! and allows to set with a simply interface the parameters.
+This plugin adds the required javascript for WebPlayer Yahoo! and allows to set  the parameters with a simply interface.
 
-For more information about WebPlayer Yahoo! visit:
+For more information about Yahoo! WebPlayer visit:
 [webplayer.yahoo.com](http://webplayer.yahoo.com/)
+
+Try [Pay your PlayList webapp](http://www.pivari.com/webapps/play-your-playlist/)
 
 With songs you will see my face. If you prefer to use your face a donation is a good idea.
 [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
@@ -26,9 +28,12 @@ With songs you will see my face. If you prefer to use your face a donation is a 
 
 == Frequently Asked Questions ==
 
-= Yahoo! Media player does not play in few browsers =
+= Yahoo! WebPlayer does not play in few browserMinimum requirementss =
 
-To find a solution to every your possible problem about WebPlayer Yahoo! 
+o The Yahoo! WebPlayer relies on JavaScript to work. If your website doesn't allow JavaScript, or if JavaScript is disabled in a user's browser, the Yahoo! WebPlayer will not appear.
+o The Yahoo! WebPlayer currently uses some Flash, and therefore the user must have Flash installed for the player to work. We are working to remove this limitation sometime soon.
+
+To find a solution to every your possible problem about Yahoo! WebPlayer 
 use the official forum
 http://tech.groups.yahoo.com/group/yhoomediaplayer/
 
@@ -39,6 +44,13 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
+
+= 1.6 =
+You can use playlink
+The playlink parameter controls whether or not clicking the link text to the right of the play button plays the item in the player, or simply lets the browser open the link as it would if the Yahoo! WebPlayer wasn't on the page.
+Setting playlink to false will mean that clicking on a media link will NOT play it in the Yahoo! WebPlayer. Only the play button will launch the player when playlink is set to false and the browser will decide what happens when the link itself is clicked.
+Setting playlink to true will cause the player to launch whenever the link itself is clicked. Both the play button and the link launch the player when playlink is set to true.
+The default value for playlink is "media-only", which means the player will launch when a user clicks on links to audio or video, but not for links to "object" pages (e.g. Movie page on Yahoo! Movies). Links to mp3, wma, YouTube videos, etc... will cause the player to launch while a link to a Yahoo! Movie page will open that URL in your browser rather than playing the trailer. 
 
 = 1.5.3 =
 Corrected a bug in volume setting
@@ -94,6 +106,10 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.6 =
+You can use playlink. It doesn't seem to work.
+Better documentation.
 
 = 1.5.3 =
 Corrected a bug in volume setting
