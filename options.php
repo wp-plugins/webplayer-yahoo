@@ -54,20 +54,6 @@
 </tr>
 
 <tr valign="top">
-<th scope="row"><b>defaultalbumart:</b></th>
-<td><input type="text" name="defaultalbumart" size="50" value="<?php echo get_option('defaultalbumart'); ?>" /><br>
-If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/">a donation</a> is a good idea.</td>
-</tr>
-
-</table>
-</div>
-</div>
-
-<div class="postbox" id="2"> 
-<h3 class='hndle'><span>WebPlayer Yahoo! settings that don't seem to work</span></h3>
-<div class="inside">
-<table class="form-table" style="margin-top: 0; clear:none;">
-<tr valign="top">
 <th scope="row"><b>volume:</b></th>
 <td>
   <select name="volume">
@@ -85,6 +71,22 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 </select>
 </td>
 </tr>
+
+<tr valign="top">
+<th scope="row"><b>defaultalbumart:</b></th>
+<td><input type="text" name="defaultalbumart" size="50" value="<?php echo get_option('defaultalbumart'); ?>" /><br>
+If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/">a donation</a> is a good idea.</td>
+</tr>
+
+</table>
+</div>
+</div>
+
+<div class="postbox" id="2"> 
+<h3 class='hndle'><span>WebPlayer Yahoo! settings that don't seem to work</span></h3>
+<div class="inside">
+<table class="form-table" style="margin-top: 0; clear:none;">
+
 <tr valign="top">
 <th scope="row"><b>playlink:</b></th>
 <td>

@@ -4,7 +4,7 @@ Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
 Tested up to: 3.3
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 
 Enables Yahoo! WebPlayer on all pages.
 
@@ -44,6 +44,11 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
+
+= 1.6.1 =
+Volume setting works.
+We have found the bug in WebPlayer documentation. This is the correct describtion:
+The volume parameter sets the default volume of the Yahoo! WebPlayer on page load. The player expects a floating number between 0.00 and 1.00. The default value is 0.50.
 
 = 1.6 =
 You can use playlink
@@ -106,6 +111,10 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.6.1 =
+Volume setting works.
+We have found the bug in WebPlayer documentation.
 
 = 1.6 =
 You can use playlink. It doesn't seem to work.
