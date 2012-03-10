@@ -1,5 +1,5 @@
 <div class="wrap">
-<h2>WebPlayer Yahoo! v. <?php global $version; echo $version; ?></h2>
+<h2>WebPlayer Yahoo! v. <?php global $webplayerversion; echo $webplayerversion; ?></h2>
 <form method="post" action="options.php">
 <div id="poststuff">
 <div id="post-body">
@@ -94,6 +94,15 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
     <option value="media-only" <?php if (get_option('playlink') == 'media-only') echo "selected=selected" ?>>media-only</option>
     <option value="true" <?php if (get_option('playlink') == 'true') echo "selected=selected" ?>>true</option>
     <option value="false" <?php if (get_option('playlink') == 'false') echo "selected=selected" ?>>false</option>
+</select>
+</td>
+</tr>
+<tr valign="top">
+<th scope="row"><b>displaystate:</b></th>
+<td>
+  <select name="displaystate">
+    <option value="0" <?php if (get_option('displaystate') == '0') echo "selected=selected" ?>>0</option>
+    <option value="1" <?php if (get_option('displaystate') == '1') echo "selected=selected" ?>>1</option>
 </select>
 </td>
 </tr>

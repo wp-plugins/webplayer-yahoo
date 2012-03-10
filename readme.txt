@@ -3,8 +3,8 @@ Contributors: Fabrizio Pivari
 Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
-Tested up to: 3.3
-Stable tag: 1.6.1
+Tested up to: 3.3.1
+Stable tag: 1.7.0
 
 Enables Yahoo! WebPlayer on all pages.
 
@@ -12,10 +12,12 @@ Enables Yahoo! WebPlayer on all pages.
 
 This plugin adds the required javascript for WebPlayer Yahoo! and allows to set  the parameters with a simply interface.
 
+Using this plugin you can change your theme or upgrade it without set everytime Yahoo! WebPlayer code.
+
 For more information about Yahoo! WebPlayer visit:
 [webplayer.yahoo.com](http://webplayer.yahoo.com/)
 
-Try [Pay your PlayList webapp](http://www.pivari.com/webapps/play-your-playlist/)
+Try [Play your PlayList webapp](http://www.pivari.com/webapps/play-your-playlist/)
 
 With songs you will see my face. If you prefer to use your face a donation is a good idea.
 [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
@@ -28,8 +30,9 @@ With songs you will see my face. If you prefer to use your face a donation is a 
 
 == Frequently Asked Questions ==
 
-= Yahoo! WebPlayer does not play in few browserMinimum requirementss =
+= Yahoo! WebPlayer does not play in few browsers =
 
+Minimum requirements
 o The Yahoo! WebPlayer relies on JavaScript to work. If your website doesn't allow JavaScript, or if JavaScript is disabled in a user's browser, the Yahoo! WebPlayer will not appear.
 o The Yahoo! WebPlayer currently uses some Flash, and therefore the user must have Flash installed for the player to work. We are working to remove this limitation sometime soon.
 
@@ -44,6 +47,10 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
+
+= 1.7 =
+You can use displaystate
+The displaystate parameter controls the state in which the player will appear on the page on page load. Setting the displaystate to 0 will load the Yahoo! WebPlayer in its minimized state, which is the small rectangular tab at the bottom left of the page. Setting the displaystate to 1 will load the Yahoo! WebPlayer in maximized state, which will reveal the entire player on page load. The default value is 0.
 
 = 1.6.1 =
 Volume setting works.
@@ -111,6 +118,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.7 =
+You can use displaystate. It doesn't seem to work.
 
 = 1.6.1 =
 Volume setting works.

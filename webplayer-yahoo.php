@@ -4,11 +4,11 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 1.6.1
+Version: 1.7.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
-/*  Copyright 2011 Fabrizio Pivari  (email : fabrizio@pivari.com)
+/*  Copyright 2011-2012 Fabrizio Pivari  (email : fabrizio@pivari.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-$version="1.6.1";
+$webplayerversion="1.7.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -45,6 +45,7 @@ function activate_webplayer() {
 	add_option('linkConfig', 'off');
 	add_option('volume', '5');
 	add_option('playlink', 'media-only');
+	add_option('displaystate', '0');
 }
 
 function deactive_webplayer() {
@@ -56,6 +57,7 @@ function deactive_webplayer() {
   delete_option('linkConfig');
   delete_option('volume');
   delete_option('playlink');
+  delete_option('displaystate');
 }
 
 function admin_init_webplayer() {
@@ -67,6 +69,7 @@ function admin_init_webplayer() {
   register_setting('webplayer', 'linkConfig');
   register_setting('webplayer', 'volume');
   register_setting('webplayer', 'playlink');
+  register_setting('webplayer', 'displaystate');
 }
 
 function admin_menu_webplayer() {
@@ -78,7 +81,7 @@ function options_page_webplayer() {
 }
 
 function webplayer() {
-  global $version;
+  global $webplayerversion;
   $theme = get_option('theme');
   $termDetection = get_option('termDetection');
   $autoplay = get_option('autoplay');
@@ -89,16 +92,17 @@ function webplayer() {
   if ( $volume == '10' ) $volume='1.00';
   else $volume = '0.'.$volume.'0';
   $playlink = get_option('playlink');
+  $displaystate = get_option('displaystate');
   if ( $defaultalbumart == '' )
 	  $defaultalbumart = 'http://www.pivari.com/fabrizio-pivari-205x205.jpg';
   if ( $linkConfig == 'youtube' )
       $linkConfig = ', linkConfig:{youtube: \'ignore\'}';
   else $linkConfig = '';
-  echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$version.' (Begin) -->'."\n" ;
-  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection . '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', volume:' . $volume . ', playlink:' . $playlink . $linkConfig . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
+  echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$webplayerversion.' (Begin) -->'."\n" ;
+  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection . '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', volume:' . $volume . ', playlink:' . $playlink . ', displaystate:' . $displaystate . $linkConfig . ', defaultalbumart:"' . $defaultalbumart . '" }; </script>'."\n";
   echo $options;
   echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player.js"></script>'."\n" ;
-  echo '<!-- WebPlayer Yahoo! plugin v. '.$version.' (End) -->'."\n" ;
+  echo '<!-- WebPlayer Yahoo! plugin v. '.$webplayerversion.' (End) -->'."\n" ;
 
 }
 
