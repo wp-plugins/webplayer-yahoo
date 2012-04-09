@@ -1,10 +1,10 @@
 === WebPlayer Yahoo! ===
-Contributors: Fabrizio Pivari
+Contributors: pivari
 Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
-Tested up to: 3.3.1
-Stable tag: 1.7.0
+Tested up to: 3.4-beta1
+Stable tag: 1.8.0
 
 Enables Yahoo! WebPlayer on all pages.
 
@@ -47,6 +47,11 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
 
 == Changelog ==
+
+= 1.8.0 =
+Tested on WP 3.4-beta1
+You can use wmodeoverride
+To prevent itself from appearing behind embedded YouTube videos, the Yahoo! WebPlayer changes the wmode setting of these embedded videos. The wmodeoverride parameter allows you to turn this feature on or off. Set wmodeoverride to 'true' to turn this feature on and set the parameter to 'false' to turn it off. The default setting is 'true'.
 
 = 1.7 =
 You can use displaystate
@@ -118,6 +123,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 1.8.0 =
+Tested on WP 3.4-beta1. You can use wmodeoverride
 
 = 1.7 =
 You can use displaystate. It doesn't seem to work.

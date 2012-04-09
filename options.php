@@ -36,6 +36,14 @@
   </select>
 </td>
 </tr><tr valign="top">
+<th scope="row"><b>wmodeoverride:</b></th>
+<td>
+  <select name="wmodeoverride">
+    <option value="true" <?php if (get_option('wmodeoverride') == 'true') echo "selected=selected" ?>>true</option>
+    <option value="false"  <?php if (get_option('wmodeoverride') == 'false') echo "selected=selected" ?>>false</option>
+  </select>
+</td>
+</tr><tr valign="top">
 <th scope="row"><b>autoadvance:</b></th>
 <td>
   <select name="autoadvance">
