@@ -4,7 +4,7 @@
 <div id="poststuff">
 <div id="post-body">
 <div class="postbox" id="1"> 
-<h3 class='hndle'><span>WebPlayer Yahoo! settings</span></h3>
+<h3 class='hndle'><span><?php _e('WebPlayer Yahoo! settings','webplayer'); ?></span></h3>
 <div class="inside"> 
 
 <?php wp_nonce_field('update-options'); ?>
@@ -83,7 +83,8 @@
 <tr valign="top">
 <th scope="row"><b>defaultalbumart:</b></th>
 <td><input type="text" name="defaultalbumart" size="50" value="<?php echo get_option('defaultalbumart'); ?>" /><br>
-If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/">a donation</a> is a good idea.</td>
+<?php _e('If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/">a donation</a> is a good idea.','webplayer'); ?>
+</td>
 </tr>
 
 </table>
@@ -91,7 +92,7 @@ If you prefer to use your face <a href="http://www.pivari.com/wordpress-plugins/
 </div>
 
 <div class="postbox" id="2"> 
-<h3 class='hndle'><span>WebPlayer Yahoo! settings that don't seem to work</span></h3>
+<h3 class='hndle'><span><?php _e("WebPlayer Yahoo! settings that don't seem to work",'webplayer'); ?></span></h3>
 <div class="inside">
 <table class="form-table" style="margin-top: 0; clear:none;">
 

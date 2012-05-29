@@ -3,8 +3,8 @@ Contributors: pivari
 Donate link: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Tags: webplayer, yahoo
 Requires at least: 2.7
-Tested up to: 3.4-beta1
-Stable tag: 1.8.0
+Tested up to: 3.4-RC1
+Stable tag: 2.0.0
 
 Enables Yahoo! WebPlayer on all pages.
 
@@ -45,8 +45,13 @@ http://tech.groups.yahoo.com/group/yhoomediaplayer/
 1. WebPlayer Yahoo! settings page.
 2. WebPlayer Yahoo! with Fabrizio Pivari face. If you prefer to use your face a donation is a good idea. [Donate to Fabrizio Pivari](http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/)
 3. Plugins / Installed Plugin / WebPlayer Yahoo!
+4. Parametri di WebPlayer Yahoo! (italian translation)
 
 == Changelog ==
+
+= 2.0.0 =
+Languages support with Italian translation.
+At the moment we have decided to not translate WebPlayer Yahoo! parameters.
 
 = 1.8.0 =
 Tested on WP 3.4-beta1
@@ -123,6 +128,9 @@ Yahoo! WebPlayer looks for terms it recognizes in the text of a page and adds pl
 * First public release
 
 == Upgrade Notice ==
+
+= 2.0.0 =
+Languages support with Italian translation. Tested on WP 3.4-RC1
 
 = 1.8.0 =
 Tested on WP 3.4-beta1. You can use wmodeoverride
