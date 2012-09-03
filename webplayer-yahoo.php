@@ -4,7 +4,7 @@
 Plugin Name: WebPlayer Yahoo!
 Plugin URI: http://www.pivari.com/wordpress-plugins/webplayer-yahoo-wp-plugin/
 Description: A simple Plugin to add WebPlayer Yahoo! code on your pages.
-Version: 2.0.0
+Version: 2.1.0
 Author: Fabrizio Pivari
 Author URI: http://www.pivari.com
  */
@@ -25,7 +25,7 @@ Author URI: http://www.pivari.com
 
 */
 
-$webplayerversion="2.0.0";
+$webplayerversion="2.1.0";
 
 if (!defined('WP_CONTENT_URL'))
       define('WP_CONTENT_URL', get_option('siteurl').'/wp-content');
@@ -100,10 +100,10 @@ function webplayer() {
   $defaultalbumart = get_option('defaultalbumart');
   $linkConfig = get_option('linkConfig');
   $volume = get_option('volume');
-  if ( $volume == '10' ) $volume='1.00';
-//  if ( $volume == '10' ) $volume='1.0';
-  else $volume = '0.'.$volume.'0';
-//  else $volume = '0.'.$volume;
+//  if ( $volume == '10' ) $volume='1.00';
+  if ( $volume == '10' ) $volume='1.0';
+//  else $volume = '0.'.$volume.'0';
+  else $volume = '0.'.$volume;
   $playlink = get_option('playlink');
   $displaystate = get_option('displaystate');
   $wmodeoverride = get_option('wmodeoverride');
@@ -113,7 +113,7 @@ function webplayer() {
       $linkConfig = ', linkConfig:{youtube: \'ignore\'}';
   else $linkConfig = '';
   echo "\n".'<!-- WebPlayer Yahoo! plugin v. '.$webplayerversion.' (Begin) -->'."\n" ;
-  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection . '", autoplay:' . $autoplay . ', autoadvance:' . $autoadvance . ', volume:' . $volume . ', playlink:' . $playlink . ', displaystate:' . $displaystate . $linkConfig . ', defaultalbumart:"' . $defaultalbumart . '", wmodeoverride:' . $wmodeoverride . ' }; </script>'."\n";
+  $options='<script type="text/javascript"> var YWPParams = { theme: "' . $theme . '", termDetection: "' . $termDetection . '", autoplay: ' . $autoplay . ', autoadvance: ' . $autoadvance . ', volume: ' . $volume . ', playlink: ' . $playlink . ', displaystate: ' . $displaystate . $linkConfig . ', defaultalbumart: "' . $defaultalbumart . '", wmodeoverride: ' . $wmodeoverride . ' }; </script>'."\n";
   echo $options;
   echo '<script type="text/javascript" src="http://webplayer.yahooapis.com/player.js"></script>'."\n" ;
   echo '<!-- WebPlayer Yahoo! plugin v. '.$webplayerversion.' (End) -->'."\n" ;
